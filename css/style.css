@@ -62,7 +62,7 @@ header {
     position: fixed;
     left: 0;
     top: 0;
-    /* background: #F6F7FB; */
+    background: #F6F7FB;
     display: flex;
     justify-content: flex-end;
     align-items: center;
