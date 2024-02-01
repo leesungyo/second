@@ -1,0 +1,748 @@
+@charset "utf-8";
+body{
+    background: #EFF0F6;
+}
+nav{
+    width: 100%;
+    height: 50px;
+    padding-top: 65px;
+    position: fixed;
+    justify-self: 51;
+    background: #EFF0F6;
+    border-right: 1px solid #061922;
+    left: 0;
+    top: 20px;
+    z-index: 30;
+}
+nav .gnb{
+    width: 100%;
+    height: 50px;
+    background: #EFF0F6;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+nav .gnb li{
+    /* background: lightgreen; */
+    width: 100px;
+    justify-content: space-between;
+}
+nav ul li a{
+    font-size: 15px;
+    font-weight: 300;
+    color: #747474;
+    transition: all 0.1s;
+}
+nav ul li:hover a{
+    font-size: 16px;
+    font-weight: 400;
+    color: #061922;
+    transform: scale(1.01);
+}
+
+/* work_info */
+.work_info{
+    margin-top: 80px;
+    padding: 56px;
+    width: 496px;
+    height: 100vh;
+    background-color: #F6F7FB;
+    border-right: 1px solid #061922;
+    position: fixed;
+    left: 0;
+    top: 0;
+    overflow: scroll;
+}
+.work_info .work_info_top{
+    width: 100%;
+    /* background: lightcoral; */
+}
+.work_info .work_info_top .work_info_categor{
+    width: 162.476px;
+    height: 30.367px;
+    border-radius: 20px;
+    background: #0F815E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #EFF0F6;
+font-family: Helvetica Regural;
+font-size: 13px;
+font-weight: 700;
+line-height: 15;
+letter-spacing: -0.45px;
+}
+.work_info .work_info_top .work_info_logo{
+    margin-top: 30px;
+    margin-bottom: 15px;
+    width: 100%;
+    height: 145px;
+    /* background: lightcyan; */
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+.work_info .work_info_top .work_info_logo img{
+    /* transform: scale(70%); */
+    /* background: lightpink; */
+    width: 60%;
+    height: 55%;
+    display: flex;
+    align-items: flex-end;
+    margin-left: 10px;
+    margin-bottom: -8px;
+}
+
+.work_info .work_info_device{
+    width: 20%;
+    height: 100%;
+    position: relative;
+    /* background: lightgreen; */
+    left: 0;
+}
+/* .work_info .work_info_middle img:nth-child(1){
+    transform: scale(10%);
+    margin-left: -28px;
+}
+.work_info .work_info_middle img:nth-child(2){
+    position: absolute;
+    left: 52%;
+    top: 28%;
+} */
+.work_info .work_info_device div{
+    width: 100%;
+    height: 100%;
+    /* background: lightblue; */
+    background-image: url(../img/main_info_phone.png);
+    background-repeat: no-repeat;
+    position: relative;
+}
+.work_info .work_info_device div .hover_scroll{
+    position: absolute;
+    width: 64px;
+    height: 115px;
+    left: 4px;
+    top: 17px;
+    background: #0F815E;
+}
+.work_info .work_info_bottom{
+    width: 100%;
+    /* background: lightskyblue; */
+}
+.work_info .work_info_bottom .go{
+    width: 100%;
+    /* background: lightsalmon; */
+    display: flex;
+    justify-content: space-between;
+}
+.work_info .work_info_bottom .go a{
+    width: 100%;
+    height: 45px;
+    border-radius: 15px;
+    font-family: AppleSDGothicNeoB00;
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: -0.45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    transition: all 0.1s;
+}
+.work_info .work_info_bottom .go a:hover{
+    background: #0F815F;
+    color: #fff;
+    font-weight: 600;
+    font-size: 16px;
+}
+/* .work_info .work_info_bottom .go .web{
+    background: #3C199E;
+    color: #F6F7FB;
+} */
+
+.work_info .work_info_bottom .info_overview{
+    width: 100%;
+    padding: 26px;
+    margin-top: 15px;
+    border-radius: 12px;
+    background: #FFF;
+}
+.work_info h5{
+    height: 24px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: flex-start;
+    line-height: 2.3;
+font-family: AppleSDGothicNeo;
+font-size: 11px;
+font-weight: 400;
+letter-spacing: -0.33px;
+}
+.work_info .work_info_bottom .info_overview .info_overview_top{
+    width: 100%;
+    /* background: lightsalmon; */
+}
+.work_info .work_info_bottom .info_overview .info_overview_top h5{
+    width: 39.166px;
+    background: #061922;
+    color: #F1F2F4;
+    text-align: center;
+    justify-content: center;
+}
+.work_info .work_info_bottom .info_overview .info_overview_top .prol{
+    margin-top: 30px;
+    color: #061922;
+font-family: AppleSDGothicNeo, Noto Sans KR;
+font-size: 15px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+letter-spacing: -0.45px;
+}
+
+.work_info .work_info_bottom .info_overview .overview_works{
+    width: 100%;
+    /* background: lightblue; */
+    margin-top: 15px;
+    font-size: 13px;
+}
+.work_info .work_info_bottom .info_overview .overview_works ul {
+    width: 100%;
+    height: 36px;
+    display: flex;
+    /* background: lightgreen; */
+    align-items: center;
+    border-bottom: 1px solid #061922;
+    color: #959595;
+}
+/* .work_info .work_info_bottom .info_overview .overview_works ul:first-child{
+    margin-bottom: 10px;
+} */
+.work_info .work_info_bottom .info_overview .overview_works ul li{
+/*     display: flex;
+    justify-content: space-between; */
+    font-family: Helvetica Regural;
+    font-weight: 500;
+    color: #061922;
+    /* background: lightskyblue; */
+}
+.work_info .work_info_bottom .info_overview .overview_works ul li:first-child{
+    width: 120px;
+    color: #959595;
+    font-weight: 600;
+    /* background: lightgoldenrodyellow; */
+}
+.work_info .work_info_bottom .info_overview .overview_works ul li span{margin-right: 10px;}
+.work_info .work_info_bottom .challenge{
+    width: 100%;
+    padding: 26px;
+    margin-top: 15px;
+    border-radius: 12px;
+    background: #FFF;
+    display: flex;
+    justify-content: center;
+}
+.work_info .work_info_bottom .challenge h5{
+    width: 70.166px;
+    background: #BF002E;
+    color: #F1F2F4;
+    font-weight: 700;
+    text-align: center;
+    justify-content: center;
+}
+.work_info .work_info_bottom .challenge .challenge_right h5{
+    background: #000585;
+}
+.work_info .work_info_bottom .challenge >div{
+    width: 50%;
+    /* background: lightcoral; */
+}
+.work_info .work_info_bottom .challenge ul{
+    margin-top: 10px;
+color: #061922;
+font-family: AppleSDGothicNeo, Noto Sans KR;
+font-size: 13px;
+font-weight: 500;
+letter-spacing: -0.45px;
+/* background: lightblue; */
+margin-top: 15px;
+}
+.work_info .work_info_bottom .challenge ul li{
+    /* background: lightgoldenrodyellow; */
+    margin-bottom: 7px;
+}
+.work_info .work_info_bottom .challenge ul li:last-child{
+    margin-bottom: 0;
+}
+
+/* work_all */
+.work_all{
+    /* background-color: lightcoral; */
+    width: calc(100%-700px);
+    height: 10000px;
+    /* width: 100%; */
+    padding: 200px 70px 0 70px;
+    margin-left: 496px;
+    background: #F7FFFC;
+  /*   float: left; */
+}
+/* .work_all img{
+    width: 100%;
+} */
+.work_all .work_header{
+    /* width: 100%; */
+    /* background: lightcoral; */
+    display: flex;
+    justify-content: space-between;
+    color: #262626;
+font-family: Helvetica Regural;
+font-size: 15px;
+font-weight: 700;
+}
+.work_all .work_main{
+    width: 100%;
+    height: 815px;
+    /* background: lightblue; */
+    margin-top: 60px;
+    
+}
+.work_all .work_main .main_hos{
+    /* background: lightgoldenrodyellow; */
+    position: absolute;
+    margin-left: -90px;
+}
+.work_all .work_main .main_main{
+    /* background: lightcoral; */
+    position: absolute;
+    margin-top: -220px;
+    margin-left: -140px;
+    transform: scale(40%);
+}
+.work_all .work_main .main_logo{
+    position: absolute;
+    margin-left: 720px;
+    margin-top: 420px;
+}
+.work_all .work_main .main_logo img{
+    transform: scale(70%);
+}
+.work_all .work_main .main_deco{
+    position: absolute;
+}
+.work_all .work_main .main_deco .deco_1{
+    position: absolute;
+    margin-left: 250px;
+    margin-top: 40px;
+    animation-name: motion;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes motion {
+	0% {margin-top: 40px;}
+	25% {margin-top: 30px;}
+	50% {margin-top: 40px;}
+	75% {margin-top: 30px;}
+	100% {margin-top: 40px;}
+}
+
+.work_all .work_main .main_deco .deco_2{
+    position: absolute;
+    margin-left: 930px;
+    margin-top: 70px;
+    animation-name: motion2;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes motion2 {
+	0% {margin-top: 70px;}
+	25% {margin-top: 60px;}
+	50% {margin-top: 70px;}
+	75% {margin-top: 60px;}
+	100% {margin-top: 70px;}
+}
+.work_all .work_main .main_deco .deco_3{
+    position: absolute;
+    margin-left: 50px;
+    margin-top: 400px;
+    animation-name: motion3;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+@keyframes motion3 {
+	0% {margin-top: 400px;}
+	25% {margin-top: 390px;}
+	50% {margin-top: 400px;}
+	75% {margin-top: 390px;}
+	100% {margin-top: 400px;}
+}
+
+.work_all .work_background{
+    width: 100%;
+/* height: 970px; */
+padding: 60px;
+border-radius: 57px;
+background: #FFF;
+box-shadow: 10px 10px 30px 0px rgba(15, 129, 94, 0.10);
+}
+.work_all .work_background .b_header{
+    width: 100%;
+    /* background: lightblue; */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.work_all .work_background .category{
+    width: 100%;
+    padding-bottom: 60px;
+    /* background: lightcoral; */
+    color: #0F815E;
+text-align: center;
+font-family: Helvetica Regural;
+font-size: 15px;
+font-weight: 700;
+}
+.work_all .work_background .b_header .tit{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.work_all h4{
+    width: 100%;
+color: #222;
+text-align: center;
+font-family: "Apple SD Gothic Neo";
+font-size: 40px;
+font-weight: 100;
+}
+.work_all .work_background .b_header .tit p{
+    color: #222;
+font-family: "Apple SD Gothic Neo";
+font-size: 20px;
+font-weight: 700;
+margin-top: 5px;
+}
+
+.work_all .work_background .b_middle{
+    width: 100%;
+    /* background: lightyellow; */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    color: #222;
+font-family: "Apple SD Gothic Neo";
+font-size: 15px;
+font-weight: 400;
+line-height: 1.5;
+margin: 65px 0 80px 0;
+}
+.work_all .work_background .b_middle .b_middle_left{
+    margin-right: 30px;
+}
+.work_all .work_background .b_middle .b_middle_right{
+    color: #808080;
+}
+.work_all .work_background .b_middle .border{
+    width: 800px;
+    height: 1px;
+    background: #CCC;
+    margin-top: 80px;
+}
+.work_all .work_background .b_bottom{
+    width: 100%;
+    height: 430px;
+    /* background: lightcyan; */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* position: relative; */
+}
+.work_all .work_background .b_bottom .bottom_txtbox{
+    width: 50%;
+    /* background: lightgreen; */
+    text-align: center;
+    position: relative;
+    /* margin-top: 60px; */
+}
+.work_all .work_background .b_bottom .bottom_txtbox .txt_box_1:nth-child(1){
+    position: absolute;
+    margin-top: -200px;
+    margin-left: -30px;
+
+}
+.work_all .work_background .b_bottom .bottom_txtbox .txt_box_1:nth-child(2){
+    position: absolute;
+    margin-top: -100px;
+    margin-left: 130px;
+}
+.work_all .work_background .b_bottom .bottom_txtbox .txt_box_1:nth-child(3){
+    position: absolute;
+    margin-top: 50px;
+}
+
+.work_all .work_solution{
+    margin: 60px 0;
+    padding-bottom: 60px;
+    width: 100%;
+    /* height: 3055.892px; */
+    border-radius: 57px;
+    background: #0F815E;
+    box-shadow: 10px 10px 30px 0px rgba(15, 129, 94, 0.10);
+}
+.work_all .work_solution .category{
+    padding: 60px 0;
+    /* background: lightcoral; */
+    color: #fff;
+text-align: center;
+font-family: Helvetica;
+font-size: 15px;
+font-weight: 700;
+}
+.work_all .work_solution .s_sols{
+    width: 100%;
+    /* background: lightblue; */
+    display: flex;
+    justify-content: space-between;
+}
+.work_all .work_solution .s_sols .s_sols__top{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* background: lightcoral; */
+}
+.work_all .work_solution .s_sols .s_sols__top .s_sols_top_icon{
+    /* background: lightcyan; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+.work_all .work_solution .s_sols .s_sols__top .s_sols_top_tit{
+    /* background: rgb(75, 75, 10); */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: #F7F7F7;
+text-align: center;
+font-size: 25px;
+font-weight: 700;
+margin-bottom: 33px;
+}
+.work_all .work_solution .s_sols .s_sols__top .s_sols_top_tit p{
+
+}
+.work_all .work_solution .s_sols .s_sols__top .s_sols_top_keyword{
+    width: 150px;
+height: 36px;
+border-radius: 11px;
+background: #F3FFFB;
+display: flex;
+justify-content: center;
+align-items: center;
+margin-bottom: 53px;
+color: #3D3D3D;
+text-align: center;
+font-family: "Apple SD Gothic Neo";
+font-size: 15px;
+font-weight: 400;
+}
+.work_all .work_solution .s_sols .s_sols__top .s_sols_top_keyword:nth-child(2){
+    background: #AEE5D4;
+}
+.work_all .work_solution .s_sols .s_sols__top .s_sols_top_keyword:nth-child(3){
+    background: #5FD4B0;
+}
+.work_all .work_solution .s_sols .s_sols__top .s_sols_top_txt{
+    width: 70%;
+    /* background: lightblue; */
+    height: 234px;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+}
+.work_all .work_solution .s_sols .s_sols__top .s_sols_top_txt ul{
+    
+}
+.work_all .work_solution .s_sols .s_sols__top .s_sols_top_txt ul li{
+    margin-bottom: 20px;
+}
+.work_all .work_solution .s_sols .s_sols__top .s_sols_top_txt ul li img{
+    margin-top: 5px;
+    margin-right: 5px;
+}
+
+.work_all .work_solution .s_sols_quick{
+    /* background: lightblue; */
+    display: flex;
+}
+.work_all .work_solution .s_sols_quick .quick_left{
+    /* background: lightgoldenrodyellow; */
+    margin-left: -70px;
+}
+.work_all .work_solution .s_sols_quick .quick_left img{
+    /* background: lightcoral; */
+}
+.work_all .work_solution .s_sols_quick .quick_right{
+    /* background: lightcoral; */
+    margin-left: -500px;
+    padding-top: 330px;
+    color: #F7F7F7;
+font-family: AppleSDGothicNeo, Noto Sans KR;
+font-size: 20px;
+font-weight: 500;
+line-height: 1.5;
+}
+.work_all .work_solution .s_sols_quick .quick_right .sol_quick_txt_top{
+    /* background: rgb(22, 25, 25); */
+}
+.work_all .work_solution .s_sols_quick .quick_right .sol_quick_txt_bottom{
+    /* background: rgb(86, 86, 32); */
+    padding-top: 420px;
+}
+
+.work_all .work_solution .s_sols_test{
+    /* background: lightgoldenrodyellow; */
+display: flex;
+}
+.work_all .work_solution .s_sols_test .test_left{
+    margin-left: -100px;
+}
+.work_all .work_solution .s_sols_test .test_right{
+    /* background: lightcoral; */
+    margin-left: -500px;
+    padding-top: 330px;
+    color: #F7F7F7;
+font-family: AppleSDGothicNeo, Noto Sans KR;
+font-size: 20px;
+font-weight: 500;
+line-height: 1.5;
+}
+.work_all .work_solution .s_sols_test .test_right .sol_test_txt{
+    /* background: darkblue; */
+    margin-top: 75px;
+}
+.work_all .work_solution .s_sols_test_result{
+    /* background: lightblue; */
+}
+.work_all .work_solution .s_sols_test_result .sols_test_result{
+
+}
+.work_all .work_solution .s_sols_test_result .sols_test_result img{
+    margin-top: -500px;
+    margin-left: 540px;
+}
+.work_all .work_solution .s_sols_test_result .sols_test_result_txt{
+    /* background: lightcoral; */
+    color: #F7F7F7;
+    margin-top: -80px;
+    padding-left: 600px;
+font-family: AppleSDGothicNeo, Noto Sans KR;
+font-size: 20px;
+font-weight: 500;
+line-height: 1.5;
+}
+
+.work_all .work_branding{
+    width: 100%;
+    /* height: 970px; */
+    padding: 60px;
+    border-radius: 57px;
+    background: #FFF;
+    box-shadow: 10px 10px 30px 0px rgba(15, 129, 94, 0.10);
+}
+.work_all .work_branding .category{
+    width: 100%;
+    padding-bottom: 60px;
+    /* background: lightcoral; */
+    color: #0F815E;
+text-align: center;
+font-family: Helvetica Regural;
+font-size: 15px;
+font-weight: 700;
+}
+.work_all .work_branding .br_header .tit{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    color: #222;
+
+font-family: "Apple SD Gothic Neom, Noto Sans KR";
+font-size: 20px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+.work_all .work_branding .br_header .tit p{
+    text-align: center;
+    line-height: 1.5;
+}
+
+.work_all .work_branding .branding_logo{
+    /* background: lightblue; */
+    padding-top: 80px;
+    
+}
+.work_all .work_branding .branding_logo .br_logos{
+    transform: scale(70%);
+}
+.work_all .work_branding .branding_logo .br_logo_deco{
+    /* background: lightgoldenrodyellow; */
+    position: absolute;
+    margin-left: 250px;
+    
+}
+.work_all .work_branding .branding_logo .br_logo{
+    /* background: lightcoral; */
+    position: absolute;
+    margin-top: 170px;
+    margin-left: 340px;
+}
+.work_all .work_branding .branding_logo .br_logo_infos{
+    margin-top: 350px;
+    /* background: lightgoldenrodyellow; */
+    display: flex;
+    justify-content: center;
+
+}
+.work_all .work_branding .branding_char{
+    width: 100%;
+    margin: 200px 0;
+    /* background: lightblue; */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.work_all .work_branding .branding_char .br_cha{
+    margin-bottom: 30px;
+}
+.work_all .work_branding .branding_char .br_cha_info{
+    margin-left: 15px;
+}
+/* .work_all .work_branding .branding_comp{
+    position: relative;
+}
+.work_all .work_branding .branding_comp .br_comp_back{
+    position: absolute;
+}
+.work_all .work_branding .branding_comp .br_comp{
+    background: lightblue;
+}
+.work_all .work_branding .branding_comp .br_comp_1{
+    
+}
+.work_all .work_branding .branding_comp .br_comp_2{
+    margin-left: 50px;
+}
+.work_all .work_branding .branding_comp .br_comp_3{
+    
+} */
+
+.work_all .work_bye{
+    background: #1AA36F;
+    width: 100%;
+}
